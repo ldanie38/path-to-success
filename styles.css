@@ -1,10 +1,12 @@
 
-/* CSS BY (add your name) */
+/* CSS BY */
 /*Lua Daniele*/
 @charset "UTF-8";
-
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 
+
+/* CSS RESET */
 *,
 *::before,
 *::after {
@@ -13,19 +15,20 @@
   padding: 0;
 }
 
+
+/* ROOT VARIABLES */
 :root {
   --max-width: 450px;
   --muted-text: #495057;
   --text: #212529;
   --less-muted: #343a40;
 
-  /* declared variables that were referenced */
   --section-gap: 2rem;
   --content-max: 420px;
   --muted: var(--muted-text);
 }
 
-/* GLOBAL (mobile-first) */
+/* GLOBAL STYLES (mobile first/small) */
 html, body { height: 100%; }
 
 body {
