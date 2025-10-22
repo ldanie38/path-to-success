@@ -1,0 +1,115 @@
+
+/* CSS BY (add your name) */
+/*Lua Daniele*/
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --max-width: 450px;
+  --muted-text: #495057;
+  --text: #212529;
+  --less-muted: #343a40;
+
+  /* declared variables that were referenced */
+  --section-gap: 2rem;
+  --content-max: 420px;
+  --muted: var(--muted-text);
+}
+
+/* GLOBAL (mobile-first) */
+html, body { height: 100%; }
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  color: var(--text);
+  background: white;
+  padding: 0.9rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+
+/* headings */
+h3 { color: var(--muted-text); }
+h2 { color: var(--less-muted); }
+
+/* spacing between sections */
+section {
+  margin-bottom: var(--section-gap);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* page wrapper: use a real element/class (.container) */
+.container, .main {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  box-sizing: border-box;
+
+
+}
+
+/* layout helpers */
+header, main, .block, .footer { box-sizing: border-box; }
+
+/* readable measure for text content */
+.content, main, .block, article, p, li {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  max-width: var(--content-max);
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  font-family: inherit;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--muted-text);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+
+
+}
+
+.table th {
+  background: var(--less-muted);
+  color: white;
+  font-weight: 700;
+}
+
+.table td.cost {
+  text-align: right;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+
+}
